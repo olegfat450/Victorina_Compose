@@ -7,7 +7,7 @@ interface MainApi {
 
     @GET("millionaire.php")
     suspend fun getQuestion(
-        @Query("qType") qType: Int = 1,
+        @Query("qType") qType: Int = 2,
         @Query("count") count: Int = 1
     ): Question
 }
